@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		85467117278E85EE008F3786 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467116278E85EE008F3786 /* Constant.swift */; };
 		85467119278EDCB0008F3786 /* ImageWithTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467118278EDCB0008F3786 /* ImageWithTextView.swift */; };
+		8546711B279EFCDB008F3786 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8546711A279EFCDA008F3786 /* ListView.swift */; };
+		85467121279F0960008F3786 /* Text+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467120279F0960008F3786 /* Text+Additions.swift */; };
+		85467125279F0EBF008F3786 /* ImageLoaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85467124279F0EBF008F3786 /* ImageLoaderService.swift */; };
 		85D44E0F26DFC90B003277AF /* SwiftUIStudyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D44E0E26DFC90B003277AF /* SwiftUIStudyApp.swift */; };
 		85D44E1126DFC90B003277AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D44E1026DFC90B003277AF /* ContentView.swift */; };
 		85D44E1326DFC90F003277AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85D44E1226DFC90F003277AF /* Assets.xcassets */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		85467116278E85EE008F3786 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		85467118278EDCB0008F3786 /* ImageWithTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageWithTextView.swift; sourceTree = "<group>"; };
+		8546711A279EFCDA008F3786 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		85467120279F0960008F3786 /* Text+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Additions.swift"; sourceTree = "<group>"; };
+		85467124279F0EBF008F3786 /* ImageLoaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderService.swift; sourceTree = "<group>"; };
 		85D44E0B26DFC90B003277AF /* SwiftUIStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85D44E0E26DFC90B003277AF /* SwiftUIStudyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIStudyApp.swift; sourceTree = "<group>"; };
 		85D44E1026DFC90B003277AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8546711F279F0949008F3786 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				85467120279F0960008F3786 /* Text+Additions.swift */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
 		85D44E0226DFC90B003277AF = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 		85D44E0D26DFC90B003277AF /* SwiftUIStudy */ = {
 			isa = PBXGroup;
 			children = (
+				8546711F279F0949008F3786 /* Additions */,
 				85467116278E85EE008F3786 /* Constant.swift */,
 				85D44E0E26DFC90B003277AF /* SwiftUIStudyApp.swift */,
 				85D44E1026DFC90B003277AF /* ContentView.swift */,
@@ -112,6 +127,8 @@
 				85D44E1C26DFC90F003277AF /* Info.plist */,
 				85D44E1926DFC90F003277AF /* SwiftUIStudy.xcdatamodeld */,
 				85D44E1426DFC90F003277AF /* Preview Content */,
+				8546711A279EFCDA008F3786 /* ListView.swift */,
+				85467124279F0EBF008F3786 /* ImageLoaderService.swift */,
 			);
 			path = SwiftUIStudy;
 			sourceTree = "<group>";
@@ -274,8 +291,11 @@
 				85D44E1826DFC90F003277AF /* Persistence.swift in Sources */,
 				85D44E1B26DFC90F003277AF /* SwiftUIStudy.xcdatamodeld in Sources */,
 				85467117278E85EE008F3786 /* Constant.swift in Sources */,
+				8546711B279EFCDB008F3786 /* ListView.swift in Sources */,
 				85467119278EDCB0008F3786 /* ImageWithTextView.swift in Sources */,
+				85467125279F0EBF008F3786 /* ImageLoaderService.swift in Sources */,
 				85D44E1126DFC90B003277AF /* ContentView.swift in Sources */,
+				85467121279F0960008F3786 /* Text+Additions.swift in Sources */,
 				85D44E0F26DFC90B003277AF /* SwiftUIStudyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +455,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStudy/Preview Content\"";
+				DEVELOPMENT_TEAM = RTDMKFRCGQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -456,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUIStudy/Preview Content\"";
+				DEVELOPMENT_TEAM = RTDMKFRCGQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwiftUIStudy/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
