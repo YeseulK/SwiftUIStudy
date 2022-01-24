@@ -90,7 +90,7 @@ struct DetailView: View {
                     }
                 }
             Text(cell.description).style(.primary)
-            Text(cell.content) // TODO: 스크롤뷰?
+            Text(cell.content).padding() // TODO: 스크롤뷰?
         }
         .navigationBarTitle(cell.title)
     }
